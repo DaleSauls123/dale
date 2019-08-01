@@ -76,7 +76,7 @@ section h1{
 }
 
 section p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
 }
 
@@ -86,18 +86,22 @@ section#home{
   background: url('images/blue.jpg') no-repeat center center/cover;
   
 }
+
 section#about{
   background: url('images/rose.jpg') no-repeat center center/cover;
   
 }
+
 section#project{
   background: url('images/darks.jpg') no-repeat center center/cover;
   
 }
+
 section#contact{
   background: url('images/smoke.jpg') no-repeat center center/cover;
   
 }
+
 .inputtext{
   width:55%;
   height:65px;
@@ -109,9 +113,10 @@ section#contact{
   float: left;
   margin-bottom: 15px;
 }
+
 .inputmessage{
-  width: 55%;
-  height: 135px;
+  width: 60%;
+  height: 150px;
   border: 3 solid black;
   color: white;
   background-color: rgba(0,0,0,0.7);
@@ -119,16 +124,31 @@ section#contact{
   padding: 0 10px;
   float: left;
 }
+
 .submitbutton{
-  width: 160px;
-  height: 65px;
+  width: 165px;
+  height: 60px;
   background-color: white;
   color: black;
   font-size: 28px;
-  border: blue;
+  border: red;
   font-weight:bold;
   float: left;
-  clear: both;
+  clear: left;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.resetbutton{
+  width: 165px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  font-size: 28px;
+  border: red;
+  font-weight:bold;
+  float: right;
+  clear: right;
   margin-top: 25px;
   cursor: pointer;
 }
@@ -143,16 +163,16 @@ section#contact{
 .home h3 {
   font-size: 3rem;
   color: #555;
-
 }
+
 footer i {
   color: white;
   padding: 15px; 
 }
+
 footer {
   text-align: center;
   background-color: #333;
-  
 }
 
 .grid-2 {
