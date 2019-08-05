@@ -54,7 +54,7 @@ text-decoration: none
 }
 
 .navbar ul li a:hover{
-  color: skyblue;
+  color: grey;
 }
 
 /* look up SCSS */
@@ -123,24 +123,28 @@ section#contact{
   padding: 0 10px;
 }
 
-.submitbutton{
+.submitbutton {
   width: 165px;
   height: 60px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: orange;
   font-size: 28px;
   border: red;
   font-weight:bold;
   clear: left;
   margin-top: 25px;
-  cursor: pointer;
+  cursor:;
+}
+
+.invisible {
+  display: none;
 }
 
 .resetbutton{
   width: 165px;
   height: 60px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: orange;
   font-size: 28px;
   border: red;
   font-weight:bold;
