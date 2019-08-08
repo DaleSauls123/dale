@@ -106,7 +106,7 @@ section#contact{
   width:55%;
   height:65px;
   border: 3px solid black;
-  color: #C0C0C0;
+  color: orange;
   background-color: rgba(0,0,0,0.7);
   font-size: 20px;
   padding: 0 10px;
@@ -116,24 +116,22 @@ section#contact{
 .inputmessage{
   width: 60%;
   height: 150px;
-  border: 3 solid black;
-  color: white;
+  border: 3px solid black;
+  color: orange;
   background-color: rgba(0,0,0,0.7);
   font-size: 20px;
   padding: 0 10px;
 }
 
 .submitbutton {
-  width: 165px;
-  height: 60px;
-  background-color: black;
+  padding: 15px 45px;
+  background: rgba(0,0,0,0.7);
   color: orange;
-  font-size: 28px;
-  border: red;
-  font-weight:bold;
-  clear: left;
-  margin-top: 25px;
-  cursor:;
+  font-size: 30px;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  border-radius: 5px;
 }
 
 .invisible {
@@ -141,17 +139,14 @@ section#contact{
 }
 
 .resetbutton{
-  width: 165px;
-  height: 60px;
-  background-color: black;
+  padding: 15px 45px;
+  background: rgba(0,0,0,0.7);
   color: orange;
-  font-size: 28px;
-  border: red;
-  font-weight:bold;
-  margin-left: 10px;
-  clear: right;
-  margin-top: 25px;
+  font-size: 30px;
+  border: 0 none;
   cursor: pointer;
+  -webkit-border-radius: 2px;
+  border-radius: 5px;
 }
 
 .home h1 {
@@ -173,12 +168,11 @@ footer i {
 
 footer {
   text-align: center;
-  background-color: #333;
+  background-color: rgba(0,0,0,0.7);
   border: 3;
   padding: 0 10px;
   float: left;
-  margin-top: 35px
-  /* padding-top:35px;  */
+  margin-top: 35px;
 }
 
 .grid-2 {
@@ -196,6 +190,7 @@ footer {
 .contactform {
   margin: 0 auto;
 }
+
 .contactform form input {
 
 }

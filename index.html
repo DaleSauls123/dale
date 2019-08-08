@@ -72,7 +72,7 @@
             
 
 
-            <input type="submit" class="submitbutton" value="Send">
+            <input id="submit" type="submit" class="submitbutton invisible"value="Send">
 
             <input type="reset" class="resetbutton" value="Reset">
 
@@ -93,12 +93,13 @@
             <a href="https://www.instagram.com/dalestuart123/">
               <i class="fab fa-instagram fa-2x"></i>
             </a>
+            <a href="https://github.com/DaleSauls123/dale"><i class="fab fa-github fa-2x"></i></a>
           </div> 
           </footer>
           
           <div  id="recaptcha">
             <form action="?" method="POST">
-              <div class="g-recaptcha" data-sitekey="6LcZxrAUAAAAAPbYW8DzWESzj-sB_7xpIPp85e-2"></div>
+              <div class="g-recaptcha" data-sitekey="6LcZxrAUAAAAAPbYW8DzWESzj-sB_7xpIPp85e-2" data-callback="recaptcha_callback"></div>
               <br/>
             </form>
           </div>
@@ -109,9 +110,15 @@
     </div>
 
     </div>
+    <script>
+      function recaptcha_callback(){
+      let submit = document.getElementById('submit');
+      submit.classList.remove('invisible');
+    }
+    </script>
     
     <script src="main.js"> </script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script> -->
   </body>
 </html>
