@@ -1,0 +1,58 @@
+*, *::before, *::after { /* all elements, before elements and after elements*/
+ box-sizing: border-box;
+ font-family: Gotham Rounded, sans-serif;
+ font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px); 
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1; /* for 1st row to last row */
+    background-color: rgba(0, 0, 0, .75); /* 75% transparency */
+    display: flex; /* Center Items */
+    align-items: flex-end; /*Right side of container */
+    justify-content: space-around; /*Push elements closer to each other and further away from the top*/   /*space-between*/; /* Space between elements*/
+    flex-direction: column; /* lineup vertically*/
+    padding: 10px;
+    word-wrap: break-word; /* Break a word in the middle and not just at the end*/
+     word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
